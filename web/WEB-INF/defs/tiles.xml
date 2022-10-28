@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- Base -->
+    <definition name="frontendlayout" template="/jsp/frontend/_base/layout.jsp">
+        <put-attribute name="header" value="/jsp/frontend/_base/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/jsp/frontend/_base/footer.jsp" />
+    </definition>
+
+    <definition name="frontend/home.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/home.jsp" />
+    </definition>
+    <definition name="frontend/products.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/products.jsp" />
+    </definition>
+    <definition name="frontend/about.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/about.jsp" />
+    </definition>
+    <definition name="frontend/contact.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/contact.jsp" />
+    </definition>
+    <definition name="frontend/gallery.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/gallery.jsp" />
+    </definition>
+    <definition name="frontend/primium.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/primium.jsp" />
+    </definition>
+    <definition name="frontend/product_info.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/product_info.jsp" />
+    </definition>
+    <definition name="frontend/webgl_sample.tiles" extends="frontendlayout">
+        <put-attribute name="body" value="/jsp/frontend/webgl_sample.jsp"/>
+    </definition>
+    <!-- Backend -->
+    <definition name="backendlayout" template="/jsp/backend/_base/layout.jsp">
+        <put-attribute name="header" value="/jsp/backend/_base/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/jsp/backend/_base/footer.jsp" />
+    </definition>
+
+    <definition name="backend/admin.tiles" extends="backendlayout">
+        <put-attribute name="body" value="/jsp/backend/admin.jsp" />
+    </definition>
+
+    <definition name="backend/products.tiles" extends="backendlayout">
+        <put-attribute name="body" value="/jsp/backend/products.jsp" />
+    </definition>
+    <definition name="backend/contact.tiles" extends="backendlayout">
+        <put-attribute name="body" value="/jsp/backend/contact.jsp"/>
+    </definition>
+    <definition name="backend/about.tiles" extends="backendlayout">
+        <put-attribute name="body" value="/jsp/backend/about.jsp"/>
+    </definition>
+</tiles-definitions>
